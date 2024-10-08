@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contato - [Seu Nome]</title>
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Voltar à Página Principal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="mensagem">Descrição detalhada do interesse:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <fieldset>
+                <legend>Preferências:</legend>
+                <label><input type="checkbox" name="interesse" value="Trabalho Remoto"> Trabalho Remoto</label>
+                <label><input type="checkbox" name="interesse" value="Estágio"> Estágio</label>
+                <label><input type="checkbox" name="interesse" value="Freelancer"> Freelancer</label>
+                <label><input type="checkbox" name="interesse" value="Temporário"> Temporário</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de Contato:</legend>
+                <label><input type="radio" name="tipo" value="Urgente" required> Urgente</label>
+                <label><input type="radio" name="tipo" value="Normal"> Normal</label>
+                <label><input type="radio" name="tipo" value="Baixa Prioridade"> Baixa Prioridade</label>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
